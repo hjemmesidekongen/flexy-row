@@ -1,0 +1,74 @@
+// |--------------------------------------------------------------------------
+// | Row
+// |--------------------------------------------------------------------------
+// |
+// | This file contains styles for the following:
+// | - .flexy-row
+// |
+
+// --------------------------------------------------
+// Variables
+// --------------------------------------------------
+
+// --------------------------------------------------
+// Mixins
+// --------------------------------------------------
+
+@mixin flexy-row-mixin() {}
+
+// --------------------------------------------------
+// Styling
+// --------------------------------------------------
+
+.flexy-row {
+	display: flex;
+	align-self: stretch;
+	align-items: center;
+	flex-wrap: nowrap;
+
+	> * {
+		flex-shrink: 0;
+	}
+}
+
+.flexy-spacer {
+	flex-grow: 1;
+}
+
+// --------------------------------------------------
+// Variants
+// --------------------------------------------------
+
+// --------------------------------------------------
+// Responsive
+// --------------------------------------------------
+
+// Mobile - and up
+@include media-breakpoint-up(xs) {}
+
+// Mobile - only
+@include media-breakpoint-only(xs) {}
+
+// Tablet - and up
+@include media-breakpoint-up(sm) {}
+
+// Tablet - only
+@include media-breakpoint-only(sm) {}
+
+// Desktop - and up
+@include media-breakpoint-up(md) {}
+
+// Desktop - only
+@include media-breakpoint-only(md) {}
+
+// Large desktop - and up
+@include media-breakpoint-up(lg) {}
+
+// Print
+@media print {}
+
+// Touch
+.touchevents {}
+
+// No touch
+.no-touchevents {}
