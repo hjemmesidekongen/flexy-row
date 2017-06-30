@@ -21,18 +21,14 @@
 // --------------------------------------------------
 
 .flexy-row {
-	display: flex;
-	align-self: stretch;
-	align-items: center;
-	flex-wrap: nowrap;
-
-	> * {
-		flex-shrink: 0;
-	}
+    display: flex;
+    align-self: stretch;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .flexy-spacer {
-	flex-grow: 1;
+    flex-grow: 1;
 }
 
 // --------------------------------------------------
